@@ -172,13 +172,13 @@ int main(int argc, char** argv)
 					TailInsert(lastNode, nextNode);
 
 				//If in middle of idHead and tail
-				else if (nextNode->idNumber > idHead->idNumber&& nextNode->idNumber < lastNode->idNumber)
+				else if (nextNode->idNumber > idHead->idNumber && nextNode->idNumber < lastNode->idNumber)
 				{
 					ptr temp = idHead;
 
 					while (temp != NULL)
 					{
-						if (nextNode->idNumber > temp->idNumber&& nextNode->idNumber < temp->next->idNumber)
+						if (nextNode->idNumber > temp->idNumber && nextNode->idNumber < temp->next->idNumber)
 						{
 							LocationInsert(temp, nextNode);
 							break;
